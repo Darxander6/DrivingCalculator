@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving Calculator </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>How long should you wait until driving?</h1>
+    <label for = "measurements">Choose a measurment type </label>
+    <select id = "measurment_choice" name = "measurements" value = 'in'>
+        <option value = "ft and in">feet and inches</option>
+        <option value = "in">inches</option>
+        <option value = "cm">centimeters</option>
+
+
+    </select>
+    <div id = Hinputs>
+        <input id = "Hinput" placeholder = "enter inches">
+    </div>
+    <label for = "weight">Choose a weight type </label>
+    <select id = "weight_choice" name = "weight" vaue = "lbs">
+        <option value = "lbs">pounds</option>
+        <option value = "kg">kilograms</option>
+
+
+    </select>
+    <div id = Winputs>
+        <input id = "Winput" placeholder ="enter pounds">
+    </div>
+    <button>Calculate</button>
+</body>
+</html>

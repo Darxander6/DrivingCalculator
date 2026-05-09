@@ -9,16 +9,32 @@
 </head>
 <body>
     <h1>How long should you wait until driving?</h1>
+    
+    <label>how many hour and minutes have you been drinking for</label>
+    <input  min = "0" type="number" placeholder = "hours" id = "hours">
+    <input min = "0" max = "59" type = "number" id = "min" placeholder = "minutes">
+        <br>
+
+    <lable for="gender">
+        Please enter your biological gender(gender you were born with)
+
+    </lable>
+    <select id = "gender" name = "gender">
+        <option value = "male">Male</option>
+        <option value = "female">Female</option>
+    </select>
+    <br>
     <label for = "measurements">Choose a measurment type </label>
     <select id = "measurment_choice" name = "measurements" value = 'in'>
-        <option value = "ft and in">feet and inches</option>
         <option value = "in">inches</option>
+        <option value = "ft and in">feet and inches</option>
         <option value = "cm">centimeters</option>
 
 
     </select>
+    
     <div id = Hinputs>
-        <input id = "Hinput" placeholder = "enter inches">
+        <input type = "number"id = "Hinput" placeholder = "enter inches">
     </div>
     <label for = "weight">Choose a weight type </label>
     <select id = "weight_choice" name = "weight" vaue = "lbs">
@@ -28,8 +44,12 @@
 
     </select>
     <div id = Winputs>
-        <input id = "Winput" placeholder ="enter pounds">
+        <input type = "number" id = "Winput" placeholder ="enter pounds">
     </div>
-    <button>Calculate</button>
+    <label for ="drinks">amount of drinks(12oz of wine,5oz of wine, or 1.5oz of liquor is about 1 drink)</label>
+    <input name = "drinks" type = "number" id = "drinks">
+    <br>
+    <button id = "Calculate" onclick = "calFunc()">Calculate</button>
+    <div id = "info"></div>
 </body>
 </html>

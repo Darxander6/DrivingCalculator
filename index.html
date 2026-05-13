@@ -8,17 +8,19 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>How long should you wait until driving?</h1>
+    <h1>How long should you wait before driving?</h1>
+    <h4>NOTE:Many places use 0.08%, but impairment can begin much earlier.</h4>
     
     <label>how many hour and minutes have you been drinking for</label>
     <input  min = "0" type="number" placeholder = "hours" id = "hours">
     <input min = "0" max = "59" type = "number" id = "min" placeholder = "minutes">
+
         <br>
 
-    <lable for="gender">
+    <label for="gender">
         Please enter your biological gender(gender you were born with)
 
-    </lable>
+    </label>
     <select id = "gender" name = "gender">
         <option value = "male">Male</option>
         <option value = "female">Female</option>
@@ -51,5 +53,8 @@
     <br>
     <button id = "Calculate" onclick = "calFunc()">Calculate</button>
     <div id = "info"></div>
+    <div id = "bacBarContainer">
+        <div id = "bacBar"></div>
+    </div>
 </body>
 </html>

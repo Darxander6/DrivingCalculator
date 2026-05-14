@@ -146,10 +146,23 @@ function calFunc(){
     const candrive = document.createElement("h2");
     candrive.id = "answer"
     if (bac > 0.05){
-      candrive.textContent = `your BAC is to high wait until it is less than 0.05%`;
+      if (bac > 0.4){
+        candrive.textContent = `your BAC is way to high please call emergency services immediately`;
+      }
+      else if (bac > 0.3){
+        candrive.textContent = `you are very intoxicated please think of seeking help this coul be life threating`;
+      }
+      else if (bac <3 && bac >0.15){
+        candrive.textContent = `You are gettin gclose to dangerous level of alchol please stop drinking immediately `;
+      }        
+      else{
+        candrive.textContent = `your BAC is to high wait until it is less than 0.05%`;
+      }
+
+
     }
     else{
-      candrive.textContent = `your BAC is below 0.05% you are leggaly allowed to drive (NOTE:This estimate is not a guarantee of safe driving. If unsure, do not drive.)`;
+      candrive.textContent = `your BAC is below 0.05% you are legally allowed to drive (NOTE:This estimate is not a guarante of safe driving. If unsure, do not drive.)`;
     }
     info.appendChild(candrive)
 
